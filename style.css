@@ -15,7 +15,7 @@
 
 .div-ul form:focus-within >.i-pesq{
     display: none;
-    /*Ícone 'search some ao clicar no form*/
+    /*Ícone 'search' some ao clicar no form*/
 }
 
 /*Menus do nav:                                         */
