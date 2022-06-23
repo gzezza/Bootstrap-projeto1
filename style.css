@@ -1,0 +1,169 @@
+/*ALTERAÇÕES E ADIÇÕES:                                 */
+
+
+/*HEADER:                                               */
+
+/*Ícone "search" do form:                               */
+.pesq{
+    position: relative;
+}
+
+.i-pesq{
+    position: absolute;
+    right: 20px;
+}
+
+.div-ul form:focus-within >.i-pesq{
+    display: none;
+    /*Ícone 'search some ao clicar no form*/
+}
+
+/*Menus do nav:                                         */
+
+.ul-nav{
+   width: 100%;
+   justify-content:space-evenly;    
+}
+
+#btn-sand:focus{
+    box-shadow: none;    
+}
+
+.nav-item a{
+    color: white;
+}
+ 
+/*Menu dropDown:                                        */
+
+.dropdown-menu-dark li a {
+    color: white;
+}
+
+/*Menu dropDown responsivo:                              */
+
+@media (min-width: 992px){ /*Tela maior*/
+    #liDrop {
+    width: 158px;
+    }
+    #a-liDrop {
+        justify-content: center;
+    }
+
+    /*Menu dropDown com hover:*/
+    .ul-nav #liDrop:focus-within > .ul-drop{
+        display: none;
+        /*Cancela o evento de click 
+          definido pelo bootstrap;
+          ATENÇÃO:
+          Só funciona se colocado antes do hover.
+        */
+    }
+
+    .ul-nav #liDrop:hover > .ul-drop{
+        display: block;
+    }
+
+    /*Form Search :                    */
+    .pesq{
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 991px){ /*Tela mobile*/
+    /*Menus :                           */
+    .item-nav:hover{
+        background-color: #343a40;
+    }    
+    .nav-item{
+        padding-left: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    } 
+
+    /*Sub-menus :                       */
+    .ul-drop{
+        padding: 0;
+        margin-right: 29px;
+    }
+
+    
+
+}
+
+/*MAIN:                                                 */
+
+@media(min-width: 1200px){
+    main{
+        width: 1200px;
+        margin: auto;
+    }
+
+}
+
+/*Cards:                                                 */
+
+@media(min-width: 610px){
+    #cards{
+    display: flex;
+    justify-content:space-between;
+     
+    margin: 20px 2px 20px 2px;
+    }
+
+}  
+
+@media(max-width: 609.99px){
+    #cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+           
+    }
+
+    .card{
+        margin: 20px;
+    }
+} 
+
+.btn-link{
+    text-decoration: none;
+    color: red;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+/*Footer:                                                 */
+
+.ul-footer{
+    padding-left: 0;
+    list-style: none;
+}
+
+.ul-footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+.ul-footer li a:hover{
+    text-decoration: underline;
+}
+
+#ul3-footer{
+    margin: 0;
+}
+
+#ul3-footer li{
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+/*Largura max. antes do tamanho "col-md":*/
+@media(max-width: 767px){
+    #ul3-footer .li-icon{
+        text-align: left;
+    }
+}    
